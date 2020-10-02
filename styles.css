@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Sacramento&display=swap');
+
+body{
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color:#45b29a;
+}
+/* .ir:hover{
+position: relative;
+top: 30px;
+} */
+/* h1{
+width: 20%;
+margin: 0 auto;
+} */
+.container{
+  margin: 0;
+  padding: 0;
+}
+.top-container{
+  height: 100vh;
+  background-color: #cbe9e9;
+}
+.top-container h1{
+  position: absolute;
+  top: 15vh;
+  left: 37%;
+  font-style: italic;
+
+  /*to make font size dynamic
+  the 90 px = 90/16*100
+  becouse every 100% = 16px
+
+  or 16px = 1em */
+  /*font-size: 562.5%;
+
+  but this type is inheritance
+  it takes the previous size in body or div and add to it */
+  /* to make static size use px or rem
+  it ignore any style else
+  rem = 16 px*/
+  /*font-size:90px;*/
+  font-size: 5.625rem;
+  /*  font-family: 'Merriweather', serif;
+
+  font-family: 'Montserrat', sans-serif;
+  */
+  font-family: 'Sacramento', cursive;
+
+}
+p{
+  color: #006A71;
+}
+
+.intro{
+  width: 40%;
+  margin: auto;
+  line-height: 2;
+}
+.top-container span{
+  font-size: 20px;
+}
+.nav{
+  position: relative;
+  width: 100%;
+}
+ul{
+  text-decoration: none;
+  position: absolute;
+  right: 5%;
+  top :40px;
+}
+li{
+  display: inline;
+  padding: 20px;
+}
+li a{
+  text-decoration: none;
+  color:#45b29a;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.Myimage{
+  position: absolute;
+  left: 5%;
+  top:14px;
+}
+.top-container p{
+  position: absolute;
+  top: 35vh;
+  left: 41%;
+  font-size:187.5%;
+  font-family: 'Merriweather', serif;
+  color:#45b29a;
+}
+
+.top-cloud{
+  position: absolute;
+  top: 15vh;
+  right: 22%;
+  z-index: 1;
+}
+.top-cloud1{
+  position: absolute;
+  top: 16vh;
+  right: 21%;
+  visibility: hidden;
+}
+.top-cloud:hover + .top-cloud1{
+  visibility: visible;
+}
+
+
+.bottom-cloud
+{
+  position: absolute;
+  top: 43vh;
+  left: 22%;
+  z-index: 1;
+}
+.bottom-cloud1{
+  position: absolute;
+  top: 44vh;
+  left: 23%;
+  visibility: hidden;
+}
+.bottom-cloud:hover + .bottom-cloud1{
+  visibility: visible;
+}
+
+.mountain{
+  position: absolute;
+  bottom: 0;
+  left:20%;
+}
+
+.middle-container1{
+  height: 100vh;
+
+
+}
+.profile{
+  position: relative;
+  top: 20vh;
+}
+
+.middle-container2{
+  height: 100vh;
+  text-align: center;
+
+}
+.skills,
+.Work{
+  position: relative;
+  top: 15vh;
+}
+.skills p,
+.Work p{
+  font-size: 18px;
+
+}
+.skills h2,
+.Work h2{
+  font-size: 2rem;
+}
+.skills h3,
+.Work h3{
+  padding-top: 20px;
+  font-size: 1.8rem;
+}
+.skills img,
+.Work img{
+  width: 200px;
+}
+
+
+.skill-row,
+.work-row{
+  width: 70%;
+  margin: 70px auto 70px auto;
+  text-align: left;
+  line-height: 1.25;
+}
+/*lw 7tana l haga clear b3d el float zy mslan el paragraph b3d float el image
+mosh hy3mel wrap 3 el image hyeb2a t7tha
+clear: left;*/
+.head3{
+  clear: left;
+}
+.imgch1{
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+.imgch2{
+  width: 100px;
+  float: right;
+  margin-left: 5px;
+}
+
+.middle-container3{
+  height: 100vh;
+}
+
+.bottom-container{
+  height: 100vh;
+  text-align: center;
+}
+.btn {
+  background: #143952;
+  background-image: -webkit-linear-gradient(top, #143952, #2980b9);
+  background-image: -moz-linear-gradient(top, #143952, #2980b9);
+  background-image: -ms-linear-gradient(top, #143952, #2980b9);
+  background-image: -o-linear-gradient(top, #143952, #2980b9);
+  background-image: linear-gradient(to bottom, #143952, #2980b9);
+  -webkit-border-radius: 48;
+  -moz-border-radius: 48;
+  border-radius: 48px;
+  text-shadow: 3px 4px 13px #ed97ed;
+  -webkit-box-shadow: 5px 5px 19px #de85de;
+  -moz-box-shadow: 5px 5px 19px #de85de;
+  box-shadow: 5px 5px 19px #de85de;
+  font-family: Georgia;
+  color: #e6c4e6;
+  font-size: 20px;
+  padding: 13px;
+  border: dotted #1f628d 1px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #8fc4e6;
+  background-image: -webkit-linear-gradient(top, #8fc4e6, #20618c);
+  background-image: -moz-linear-gradient(top, #8fc4e6, #20618c);
+  background-image: -ms-linear-gradient(top, #8fc4e6, #20618c);
+  background-image: -o-linear-gradient(top, #8fc4e6, #20618c);
+  background-image: linear-gradient(to bottom, #8fc4e6, #20618c);
+  text-decoration: none;
+}
+
+.contact-me{
+  line-height: 1.5;
+  position: relative;
+  top: 15vh;
+}
+.contact-me p{
+  line-height: 2;
+  padding-bottom: 20px;
+  width: 40%;
+  margin: auto;
+}
+.links a{
+  position: relative;
+  top: 34vh;
+color:#45b29a;
+
+}
+
+.links a i:hover{
+  color: #cbe9e9;
+  background-color: #006A71;
+}
+
+/*===============================================*/
+
+
+ul.gallery{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.gallery li{
+  display: block;
+  width: 200px; /* width of gallery */
+  height: 50px; /* portion of each gallery image that's shown initially */
+  position: relative;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+ul.gallery li img{
+  position: absolute;
+  width: 100%;
+  border: 10px solid #D8D2A2;
+ -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+	filter: url(#grayscale);
+  filter: grayscale(1);
+	-webkit-transition: all .5s ease-in-out; /* CSS3 transition setting */
+	-moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+
+
+ul.gallery li:focus{ /* when a LI receives focus (clicked on) */
+  z-index: 100;
+	outline: none;
+	-webkit-transform: rotate(3deg); /* rotate enlarged LI by 3 degrees */
+	-moz-transform: rotate(3deg);
+	transform: rotate(3deg);
+	pointer-events: none; /* disable pointer events on enlarged LI so thumbnail(s) beneath it can receive those events */
+
+}
+
+
+/* ul.gallery li:nth-of-type(even):focus{ /* even LIs that received focus */
+/*	-webkit-transform: rotate(-1deg); /* rotate enlarged LI by -1 degrees instead */
+/*	-moz-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+} */
+
+
+
+ul.gallery li:focus img{
+  -webkit-transform: scale(2) translateX(-80%); /* enlarge focused image and move horizontally */
+  -moz-transform: scale(2) translateX(-80%);
+  transform: scale(2) translateX(-80%);
+  top: 50px; /* shift enlarged image downwards by 10px */
+	outline: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  -webkit-filter: grayscale(0); /* nullify grayscale effect */
+  filter: none;
+
+}
+
+ul.gallery li:first-of-type:focus img{ /* first image within list of thumbnails that receives focus */
+  top: 80px; /* move image down by 80px so it's not obscured by top of window edge */
+}
+
+
+/*===============================================*/
+
+
+
+/*==================================================================================*/
+
+.imagepluscontainer{ /* main image container */
+position: relative;
+z-index: 1;
+
+}
+
+.imagepluscontainer img{ /* CSS for image within container */
+position: relative;
+z-index: 2;
+-moz-transition: all 0.5s ease; /* Enable CSS3 transition on all props */
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.imagepluscontainer:hover img{ /* CSS for image when mouse hovers over main container */
+-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-moz-transform: scale(1.05, 1.05);
+-webkit-transform: scale(1.05, 1.05);
+-ms-transform: scale(1.05, 1.05);
+-o-transform: scale(1.05, 1.05);
+transform: scale(1.05, 1.05);
+}
+
+.imagepluscontainer div.desc{ /* CSS for desc div of each image. */
+position: absolute;
+width: 90%;
+z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
+top:15px;
+left:0;
+bottom:auto;  /* reset from default */
+padding-left:15px;
+background: #45b29a;
+color: white;
+-moz-border-radius: 8px 0 0 8px; /* CSS3 rounded borders */
+-webkit-border-radius:8px 0 0 8px;
+border-radius:8px 0 0 8px;
+opacity: 0; /* Set initial opacity to 0 */
+-moz-box-shadow: 0 0 6px rgba(#46b39b, 0.3); /* CSS3 shadows */
+-webkit-box-shadow: 0 0 6px rgba(#46b39b, 0.3);
+box-shadow: 0 0 6px rgba(#46b39b, 0.3);
+-moz-transition: all 0.09s ease 0.09s; /* Enable CSS3 transition on desc div. Final 0.5s value is the delay before animation starts */
+-webkit-transition: all 0.09s ease 0.09s;
+-o-transition: all 0.09s ease 0.09s;
+-ms-transition: all 0.09s ease 0.09s;
+transition: all 0.4s ease 0.4s;
+
+}
+
+.imagepluscontainer div.desc a{
+color: white;
+}
+
+.imagepluscontainer:hover div.desc { /* CSS for desc div when mouse hovers over main container */
+  -moz-transform: translate(-100%,0);
+  -webkit-transform: translate(-100%,0);
+  -ms-transform: translate(-100%,0);
+  -o-transform: translate(-100%,0);
+  transform:translate(-100%,0);
+  opacity:0.7; /* Reveal desc DIV fully */
+
+}
+
+
+
+
+/*==================================================================================*/
+.copywrite{
+  background-color: #cbe9e9;
+  position: relative;
+  top: 36vh;
+  padding-top: 20px;
+    padding-bottom: 20px;
+}
