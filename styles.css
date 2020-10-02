@@ -377,7 +377,7 @@ transform: scale(1.2, 1.2);
 
 .imagepluscontainer div.desc{ /* CSS for desc div of each image. */
 position: absolute;
-width: 600%;
+width: 500%;
 z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
 top:20%;
 left:10%;
