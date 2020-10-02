@@ -25,9 +25,9 @@ margin: 0 auto;
   background-color: #cbe9e9;
 }
 .top-container h1{
-  position: absolute;
-  top: 15vh;
-  left: 37%;
+  margin:0;
+  padding-top:20vh;
+  text-align:center;
   font-style: italic;
 
   /*to make font size dynamic
@@ -43,7 +43,7 @@ margin: 0 auto;
   it ignore any style else
   rem = 16 px*/
   /*font-size:90px;*/
-  font-size: 5.625rem;
+  font-size:550%;
   /*  font-family: 'Merriweather', serif;
 
   font-family: 'Montserrat', sans-serif;
@@ -58,10 +58,11 @@ p{
 .intro{
   width: 40%;
   margin: auto;
-  line-height: 2;
+  line-height: 200%;
+  font-size:100%;
 }
 .top-container span{
-  font-size: 20px;
+  font-size: 20%;
 }
 .nav{
   position: relative;
@@ -70,8 +71,8 @@ p{
 ul{
   text-decoration: none;
   position: absolute;
-
-  top :40px;
+  top :100%;
+  padding-top:3vh;
 }
 li{
   display: inline;
@@ -89,10 +90,9 @@ li a{
   top:14px;
 }
 .top-container p{
-  position: absolute;
-  top: 35vh;
-  left: 41%;
-  font-size:187.5%;
+  margin:0;
+  text-align:center;
+  font-size:160%;
   font-family: 'Merriweather', serif;
   color:#45b29a;
 }
@@ -100,13 +100,13 @@ li a{
 .top-cloud{
   position: absolute;
   top: 15vh;
-  right: 22%;
+  right: 5%;
   z-index: 1;
 }
 .top-cloud1{
   position: absolute;
   top: 16vh;
-  right: 21%;
+  right: 4.5%;
   visibility: hidden;
 }
 .top-cloud:hover + .top-cloud1{
@@ -118,13 +118,13 @@ li a{
 {
   position: absolute;
   top: 43vh;
-  left: 22%;
+  left: 5%;
   z-index: 1;
 }
 .bottom-cloud1{
   position: absolute;
   top: 44vh;
-  left: 23%;
+  left: 5.5%;
   visibility: hidden;
 }
 .bottom-cloud:hover + .bottom-cloud1{
@@ -132,9 +132,8 @@ li a{
 }
 
 .mountain{
-  position: absolute;
-  bottom: 0;
-  left:20%;
+  position: ralative;
+  width:80%;
 }
 
 .middle-container1{
@@ -145,6 +144,13 @@ li a{
 .profile{
   position: relative;
   top: 20vh;
+}
+
+.profile img{
+  width:20%;
+}
+.profile h2{
+  font-size:280%;
 }
 
 .middle-container2{
@@ -159,30 +165,29 @@ li a{
 }
 .skills p,
 .Work p{
-  font-size: 18px;
+  font-size: 120%;
 
 }
 .skills h2,
 .Work h2{
-  font-size: 2rem;
+  font-size: 200%;
 }
 .skills h3,
 .Work h3{
-  padding-top: 20px;
-  font-size: 1.8rem;
+  padding-top: 5%;
+  font-size: 170%;
 }
-.skills img,
-.Work img{
-  width: 200px;
+.skills img
+{  width: 30%;
 }
-
+.imgch3{width: 50%;}
 
 .skill-row,
 .work-row{
   width: 70%;
-  margin: 70px auto 70px auto;
+  margin: 4% auto 4% auto;
   text-align: left;
-  line-height: 1.25;
+  line-height: 200%;
 }
 /*lw 7tana l haga clear b3d el float zy mslan el paragraph b3d float el image
 mosh hy3mel wrap 3 el image hyeb2a t7tha
@@ -191,15 +196,13 @@ clear: left;*/
   clear: left;
 }
 .imgch1{
-  width: 100px;
   float: left;
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 .imgch2{
-  width: 100px;
   float: right;
-  margin-left: 5px;
+  margin-left: 2%;
 }
 
 .middle-container3{
@@ -226,11 +229,10 @@ clear: left;*/
   box-shadow: 5px 5px 19px #de85de;
   font-family: Georgia;
   color: #e6c4e6;
-  font-size: 20px;
-  padding: 13px;
+  font-size: 100%;
+  padding: 1%;
   border: dotted #1f628d 1px;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .btn:hover {
@@ -244,13 +246,13 @@ clear: left;*/
 }
 
 .contact-me{
-  line-height: 1.5;
+  line-height: 190%;
   position: relative;
   top: 15vh;
 }
 .contact-me p{
-  line-height: 2;
-  padding-bottom: 20px;
+  line-height: 180%;
+  padding-bottom: 5vh;
   width: 40%;
   margin: auto;
 }
@@ -273,13 +275,14 @@ ul.gallery{
   list-style: none;
   margin: 0;
   padding: 0;
-  right: 5%;
+  right: 20%;
+  top:10%;
 }
 
 ul.gallery li{
   display: block;
-  width: 200px; /* width of gallery */
-  height: 50px; /* portion of each gallery image that's shown initially */
+  width: 800%; /* width of gallery */
+  height: 12vh; /* portion of each gallery image that's shown initially */
   position: relative;
   -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -289,7 +292,7 @@ ul.gallery li{
 
 ul.gallery li img{
   position: absolute;
-  width: 100%;
+  width: 90%;
   border: 10px solid #D8D2A2;
  -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);
@@ -322,10 +325,10 @@ ul.gallery li:focus{ /* when a LI receives focus (clicked on) */
 
 
 ul.gallery li:focus img{
-  -webkit-transform: scale(2) translateX(-80%); /* enlarge focused image and move horizontally */
-  -moz-transform: scale(2) translateX(-80%);
-  transform: scale(2) translateX(-80%);
-  top: 50px; /* shift enlarged image downwards by 10px */
+  -webkit-transform: scale(1.5) translateX(-70%); /* enlarge focused image and move horizontally */
+  -moz-transform: scale(1.5) translateX(-70%);
+  transform: scale(1.5) translateX(-70%);
+  top: 10%; /* shift enlarged image downwards by 10px */
 	outline: none;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
   -webkit-filter: grayscale(0); /* nullify grayscale effect */
@@ -334,7 +337,7 @@ ul.gallery li:focus img{
 }
 
 ul.gallery li:first-of-type:focus img{ /* first image within list of thumbnails that receives focus */
-  top: 80px; /* move image down by 80px so it's not obscured by top of window edge */
+  top: 140%; /* move image down by 80px so it's not obscured by top of window edge */
 }
 
 
@@ -351,7 +354,8 @@ z-index: 1;
 }
 
 .imagepluscontainer img{ /* CSS for image within container */
-position: relative;
+position: absolute;
+right:20%;
 z-index: 2;
 -moz-transition: all 0.5s ease; /* Enable CSS3 transition on all props */
 -webkit-transition: all 0.5s ease-in-out;
@@ -364,21 +368,21 @@ transition: all 0.5s ease-in-out;
 -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
--moz-transform: scale(1.05, 1.05);
--webkit-transform: scale(1.05, 1.05);
--ms-transform: scale(1.05, 1.05);
--o-transform: scale(1.05, 1.05);
-transform: scale(1.05, 1.05);
+-moz-transform: scale(1.2, 1.2);
+-webkit-transform: scale(1.2, 1.2);
+-ms-transform: scale(1.2, 1.2);
+-o-transform: scale(1.2, 1.2);
+transform: scale(1.2, 1.2);
 }
 
 .imagepluscontainer div.desc{ /* CSS for desc div of each image. */
 position: absolute;
-width: 90%;
+width: 600%;
 z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
-top:15px;
-left:0;
+top:20%;
+left:10%;
 bottom:auto;  /* reset from default */
-padding-left:15px;
+padding-left:20%;
 background: #45b29a;
 color: white;
 -moz-border-radius: 8px 0 0 8px; /* CSS3 rounded borders */
@@ -415,212 +419,25 @@ color: white;
   background-color: #cbe9e9;
   position: relative;
   top: 36vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-@media(max-width:960px) {
-  .top-container{
-    margin: 0;
-    padding: 0;
-  }
-
-  .top-container h1{
-    top: 200px;
-    font-size: 1.825rem;
-    line-height: 1;
-  }
-
-  .intro{
-    margin: auto;
-    line-height: 1.5;
-  }
-  .top-container span{
-    font-size:0;
-  }
-  .Myimage{
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  }
-  .nav{
-    position: relative;
-    width: 100%;
-    margin: 0;
-  }
-  ul{
-    margin: 0;
-    text-decoration: none;
-    position: absolute;
-    top :40px;
-  }
-  li{
-    display: inline;
-    padding: 0;
-  }
-  li a{
-    text-decoration: none;
-    color:#45b29a;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-
-  }
-  .top-container p{
-    position: absolute;
-    top: 35vh;
-    left: 41%;
-    font-size:87.5%;
-    font-family: 'Merriweather', serif;
-    color:#45b29a;
-  }
-
-  .top-cloud{
-    position: absolute;
-    top: 15vh;
-    right: 2%;
-    z-index: 1;
-    width: 100px;
-  }
-  .top-cloud1{
-    position: absolute;
-    top: 18vh;
-    right: 2.5%;
-    width: 70px;
-    visibility: hidden;
-  }
-
-
-
-  .bottom-cloud
-  {
-    position: absolute;
-    top: 43vh;
-    left: 2%;
-    z-index: 1;
-    width: 100px;
-  }
-  .bottom-cloud1{
-    position: absolute;
-    top: 46vh;
-    left:  7.5%;
-    width: 70px;
-    visibility: hidden;
-  }
-
-  .mountain{
-    position: absolute;
-    bottom: 0;
-    width:250px;
-    height: 30vh;
-    left: 4%;
-  }
-
-  .middle-container1{
-    height: 100vh;
-  }
-  .profile{
-    position: relative;
-    top: 20vh;
-  }
-  .profile img {
-    width: 100px;
-  }
-  .profile h2{
-    font-size: 1.2rem;
-  }
-
-  .profile p{
-    font-size: 1.1rem;
-  }
-
-  .middle-container2{
-    height: 100vh;
-
-  }
-
-  .skills,
-  .Work{
-    position: relative;
-  }
-  .skills p,
-  .Work p{
-    font-size: 11px;
-
-  }
-  .skills h2,
-  .Work h2{
-    font-size: 1.2rem;
-  }
-  .skills h3,
-  .Work h3{
-    padding-top: 20px;
-    font-size: 1.1rem;
-  }
-  .skills img,
-  .Work img{
-    width: 100px;
-  }
-
-
-  .skill-row,
-  .work-row{
-    width: 70%;
-    margin: 70px auto 70px auto;
-    text-align: left;
-    line-height: 1.25;
-  }
-
-  .btn {
-
-    font-size: 10px;
-    padding: 7px;
-    margin-top: 10px;
-  }
-
-  .contact-me{
-    line-height: 1.1;
-    position: relative;
-    top: 12vh;
-  }
-  .contact-me p{
-    line-height: 1.5;
-    padding-bottom: 20px;
-    font-size: 0.8rem;
-    width: 40%;
-    margin: auto;
-  }
-  .links a{
-    position: relative;
-    top: 18vh;
-
-  }
-
-
-
-  ul.gallery li{
-    top: 30vh;
-    width: 100px; /* width of gallery */
-    height: 30px; /* portion of each gallery image that's shown initially */
-
-  }
-
-
-  ul.gallery li img{
-    position: absolute;
-    width: 70%;
-    border: 4px solid #D8D2A2;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.imagepluscontainer div.desc{ /* CSS for desc div of each image. */
-position: absolute;
+@media (max-width:960px) {
+.top-cloud, .top-cloud1, .bottom-cloud, .bottom-cloud1, .mountain, .imgch3{
+  display: none;
+}
+
+ul.gallery{
+
+  right: 50%;
+  top:10vh;
+}
+
+ul.gallery li img{
 width: 50%;
-z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
-top:30vh;
-padding-right:90px;
-
 }
-
-.imagepluscontainer div.desc a{
-font-size: 0.6rem;
+.top-container h1{
+  padding-top:35vh;
 }
 }
