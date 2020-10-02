@@ -377,12 +377,12 @@ transform: scale(1.2, 1.2);
 
 .imagepluscontainer div.desc{ /* CSS for desc div of each image. */
 position: absolute;
-width: 500%;
+width: 400%;
 z-index: 1; /* Set z-index to that less than image's, so it's hidden beneath it */
 top:20%;
 left:10%;
 bottom:auto;  /* reset from default */
-padding-left:20%;
+padding-left:10%;
 background: #45b29a;
 color: white;
 -moz-border-radius: 8px 0 0 8px; /* CSS3 rounded borders */
