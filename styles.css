@@ -367,7 +367,7 @@ color: white;
 }
 .contact-me p{
   line-height: 180%;
-  padding-bottom: 5vh;
+  margin-bottom: 5vh;
   width: 40%;
   margin: auto;
 }
@@ -414,9 +414,11 @@ color:#45b29a;
   width: 20%;
 }
 .links a{
-top: 24vh;
+bottom: 9vh;
 }
-
+.contact-me img{
+  width: 70px;
+}
 .copywrite{
-top: 26vh;
+bottom: 2vh;
 }
