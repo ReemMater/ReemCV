@@ -578,20 +578,3 @@ These rules control which portions of the menu gets shown when the screen size i
 By default 2 stages are defined depending on browser screen width.
 */
 
-
-@media screen and (max-width: 560px) { /* Convert horizontal menu to vertical drop down instead (friendly across all screen sizes) */
-    .iconicmenu {
-        overflow: visible;
-        }
-    .iconicmenu ul {
-        height: auto;
-        }
-    .iconicmenu ul li {
-        min-width: 200px;;
-        display: block;
-        }
-    .iconicmenu ul li a {
-        float: none;;
-        text-align: left;
-        }
-    }
