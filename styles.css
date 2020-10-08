@@ -17,6 +17,14 @@ body{
   margin: 0;
   padding: 0;
 }
+.menu{
+  position: fixed;
+  top:2vh;
+  left: 10px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
 .top-container{
   height: 100vh;
   background-color: #cbe9e9;
@@ -64,13 +72,13 @@ p{
 
 .top-cloud{
   position: absolute;
-  top: 15vh;
+  top: 13vh;
   right: 5%;
   z-index: 1;
 }
 .top-cloud1{
   position: absolute;
-  top: 16vh;
+  top: 14vh;
   right: 4.5%;
   visibility: hidden;
 }
@@ -82,13 +90,13 @@ p{
 .bottom-cloud
 {
   position: absolute;
-  top: 43vh;
+  top: 40vh;
   left: 5%;
   z-index: 1;
 }
 .bottom-cloud1{
   position: absolute;
-  top: 44vh;
+  top: 41vh;
   left: 5.5%;
   visibility: hidden;
 }
@@ -98,7 +106,8 @@ p{
 
 .mountain{
   position: ralative;
-  width:80%;
+  width:60%;
+  bottom:90vh;
 }
 /*===============================================================================================*/
 
@@ -423,3 +432,166 @@ bottom: 9vh;
 .copywrite{
 bottom: 2vh;
 }
+}
+
+
+.iconicmenu {
+    position: relative;
+    height: 45px;
+  overflow: hidden;
+    }
+
+.iconicmenu, .iconicmenu * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+.iconicmenu > label { /* Main label icon to toggle menu state */
+    z-index: 1000;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 10px;
+    top:1.5vh;
+    left: 10px;
+    float: left;
+    background:rgba(34, 11, 14, 0.11);
+    text-indent: -1000000px;
+    border: 3px solid cadetblue; /* border color */
+    border-width: 3px 0;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; /* transition for flipping label */
+    }
+
+.iconicmenu > label::after { /* inner stripes inside label */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    top: 19%;
+    left: 0;
+    border: 6px solid #45b29a; /* border color */
+    border-width: 6px 0;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; /* transition for flipping label */
+    }
+
+.iconicmenu ul { /* UL menu inside container */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-left: 30px;
+    background: rgba(#eeeeee, 0);
+    left: -100%; /* hide menu intially */
+    height: 40px; /* height of menu */
+    font: bold 14px Verdana;
+    text-align: center;
+    list-style: none;
+    opacity: 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    -moz-perspective: 10000px;
+    perspective: 10000px;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; /* transition for animating UL in and out */
+    }
+
+.iconicmenu li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    }
+
+.iconicmenu ul label { /* label button inside UL to close menu */
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    }
+
+.iconicmenu ul label::after { /* label button x */
+    content: "x";
+    display: inline-block;
+    line-height: 14px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background: rgba(173, 18, 154, 0.2);
+    font-size: 18px;
+    margin: 5px;
+    margin-top: 10px;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    }
+.iconicmenu input[type="checkbox"]:checked ~ label, .iconicmenu ul label:hover::after {
+    -moz-transform: rotatey(180deg);
+    -ms-transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg);
+    transform: rotatey(180deg); /* flip labels vertically onMouseover */
+    }
+
+.iconicmenu > label:hover, .iconicmenu > label:hover::after, .iconicmenu input[type="checkbox"]:checked ~ label, .iconicmenu input[type="checkbox"]:checked ~ label::after {
+    border-color: #45b29a; /* highlight color of main menu label onMouseover */
+    }
+
+.iconicmenu input[type="checkbox"]:checked ~ ul {
+    left: 8px; /* Animate menu into view */
+    opacity: 1;
+    -moz-box-shadow: 1px 1px 5px rgba(226, 230, 150, 0.4);
+    -webkit-box-shadow: 1px 1px 5px rgba(226, 230, 150, 0.4);
+    box-shadow: 1px 1px 5px rgba(226, 230, 150, 0.9);
+    }
+
+.iconicmenu li a {
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+  color:#45b29a;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 10px;
+    padding-right: 15px;
+    height: 100%;
+    }
+
+.iconicmenu li a:hover {
+  outline: none;
+  border-bottom: 2px solid #eee;
+    }
+
+
+/* ----------------------------- CSS Media Queries ----------------------------- */
+
+/*
+These rules control which portions of the menu gets shown when the screen size is below a certain width.
+By default 2 stages are defined depending on browser screen width.
+*/
+
+
+@media screen and (max-width: 560px) { /* Convert horizontal menu to vertical drop down instead (friendly across all screen sizes) */
+    .iconicmenu {
+        overflow: visible;
+        }
+    .iconicmenu ul {
+        height: auto;
+        }
+    .iconicmenu ul li {
+        min-width: 200px;;
+        display: block;
+        }
+    .iconicmenu ul li a {
+        float: none;;
+        text-align: left;
+        }
+    }
