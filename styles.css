@@ -345,7 +345,8 @@ color: white;
   color: #e6c4e6;
   font-size: 100%;
   padding: 1%;
-  top:30vh;
+  position: relative;
+  top: 10vh;;
   border: dotted #1f628d 1px;
   text-decoration: none;
 }
